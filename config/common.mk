@@ -208,8 +208,3 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION)
 #  ro.modversion=$(CM_VERSION)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.goo.developerid=Benee \
-  ro.goo.rom=CM10HackFest \
-  ro.goo.version=$(shell date +%s)
