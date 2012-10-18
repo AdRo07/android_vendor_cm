@@ -97,8 +97,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
-    vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -127,7 +126,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     SpareParts \
     Superuser \
-    Superuser.apk \
     su
 
 # Optional CM packages
@@ -135,12 +133,7 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
-    Basic \
-    HoloSpiralWallpaper \
-    NoiseField \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    PhaseBeam
+    Basic
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
@@ -149,14 +142,21 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
-    Apollo
+    Apollo \
+    CMUpdater
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    bash \
+    vim \
+    nano \
+    htop \
+    powertop \
+    lsof
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -203,8 +203,12 @@ else
     CM_EXTRAVERSION :=
 endif
 
+#ifdef CM_RELEASE
     CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
+#else
+    CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+#endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION)
-#  ro.modversion=$(CM_VERSION)
+  #ro.modversion=$(CM_VERSION)
