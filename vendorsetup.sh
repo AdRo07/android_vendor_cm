@@ -2,3 +2,4 @@ for combo in $(wget -o /dev/null -O - https://raw.github.com/CyanogenMod/hudson/
 do
     add_lunch_combo $combo
 done
+add_lunch_combo cm_p990-eng
