@@ -160,6 +160,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
+# tonyp additions
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
+
+PRODUCT_PACKAGES += \
+    PerformanceControl \
+    GooUpdater \
+    ZipInstaller
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
