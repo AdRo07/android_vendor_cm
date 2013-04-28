@@ -169,11 +169,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-#PRODUCT_PACKAGES += \
-#    PerformanceControl \
-#    GooUpdater \
-#    ZipInstaller
-
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
