@@ -172,6 +172,11 @@ PRODUCT_PACKAGES += \
     GooUpdater \
     ZipInstaller
 
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.goo.developerid=tonyp \
+  ro.goo.board=$(BOARD) \
+  ro.goo.version=$(shell date +%s)
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
