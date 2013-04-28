@@ -162,12 +162,17 @@ PRODUCT_PACKAGES += \
 
 # tonyp additions
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
+    vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
+    vendor/cm/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
+    vendor/cm/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
+    vendor/cm/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
+    vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
+    vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-PRODUCT_PACKAGES += \
-    PerformanceControl \
-    GooUpdater \
-    ZipInstaller
+#PRODUCT_PACKAGES += \
+#    PerformanceControl \
+#    GooUpdater \
+#    ZipInstaller
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
