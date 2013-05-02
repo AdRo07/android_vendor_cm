@@ -169,8 +169,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
 PRODUCT_PACKAGES += \
-    GooUpdater \
-    ZipInstaller
+    GooUpdater
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=tonyp \
