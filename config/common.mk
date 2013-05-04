@@ -171,7 +171,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PACKAGES += \
     GooUpdater
 
+TONYP_VERSION = 1
+
 PRODUCT_PROPERTY_OVERRIDES += \
+  ro.tonyp.version=$(TONYP_VERSION) \
   ro.goo.developerid=tonyp \
   ro.goo.board=$(BOARD) \
   ro.goo.version=$(shell date +%s)
