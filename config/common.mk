@@ -168,8 +168,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-PRODUCT_PACKAGES += \
-    GooUpdater
+#PRODUCT_PACKAGES += \
+#    GooUpdater
 
 TONYP_VERSION = 01
 
