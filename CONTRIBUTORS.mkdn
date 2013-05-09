@@ -19,6 +19,11 @@ Maintainers (CyanogenMod 10):
 * __HTC One XL:__ h8rift, intervigil
 * __LG Optimus LTE (P930) / LG Nitro HD {P935):__ arcee
 * __LG Optimus LTE (SK Telecom) (SU640):__ arcee
+* __Motorola Droid 3:__ dhacker29, Hashcode
+* __Motorola Droid 4:__ dhacker29, Hashcode
+* __Motorola Droid Bionic:__ dhacker29, Hashcode
+* __Motorola Droid RAZR/RAZR Maxx (CDMA):__ dhacker29, Hashcode
+* __Motorola RAZR/RAZR Maxx (GSM):__ dhacker29, Hashcode
 * __Motorola Xoom (WiFi):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 3G (UMTS):__ bazar, SteadyHawkin, TDR (Team Rogue)
 * __Motorola Xoom 4G LTE (Verizon):__ bazar, SteadyHawkin, TDR (Team Rogue)
@@ -46,6 +51,8 @@ Maintainers (CyanogenMod 10):
 * __Samsung Galaxy S III (T-Mobile) (SGH-T999):__ cyanogen
 * __Samsung Galaxy S III (US Cellular) (SCH-R530):__ noobnl
 * __Samsung Galaxy S III (Verizon) (SCH-I535):__ cvcps
+* __Samsung Galaxy S IV (Canada) (SGH-I337M):__ DvTonder
+* __Samsung Galaxy S IV (T-Mobile) (SGH-M919):__ cyanogen
 * __Samsung Galaxy Tab 7" (GSM):__ cdesai, humberos
 * __Samsung Galaxy Tab 7" (CDMA):__ jt1134
 * __Samsung Galaxy Tab 2 7" (GT-P31xx):__ codeworkx
