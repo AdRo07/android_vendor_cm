@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
     vendor/cm/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
+    vendor/cm/prebuilt/common/etc/init.d/95kowalski:system/etc/init.d/95kowalski \
     vendor/cm/prebuilt/common/lib/hw/power.tegra.so:system/lib/hw/power.tegra.so \
     vendor/cm/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
