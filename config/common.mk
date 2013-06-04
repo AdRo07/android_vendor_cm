@@ -170,9 +170,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-PRODUCT_PACKAGES += \
-    PermissionsManager
-
 TONYP_VERSION = 05
 
 PRODUCT_PROPERTY_OVERRIDES += \
