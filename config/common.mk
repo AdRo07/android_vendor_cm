@@ -170,10 +170,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-#PRODUCT_PACKAGES += \
-#    GooUpdater
-
-TONYP_VERSION = 04
+TONYP_VERSION = 05
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tonyp.version=$(TONYP_VERSION) \
