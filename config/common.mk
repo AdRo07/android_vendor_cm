@@ -172,6 +172,9 @@ PRODUCT_COPY_FILES +=  \
 
 TONYP_VERSION = 05
 
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/pa_hdpi.conf:system/etc/hybrid/properties.conf
+
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tonyp.version=$(TONYP_VERSION) \
   ro.goo.developerid=tonyp \
