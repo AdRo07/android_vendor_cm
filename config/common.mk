@@ -135,7 +135,6 @@ include vendor/cm/config/themes_common.mk
 # Required CM packages
 PRODUCT_PACKAGES += \
     Camera \
-    Development \
     LatinIME \
     Superuser \
     su
@@ -148,11 +147,10 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
+    Launcher2 \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock
@@ -213,7 +211,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = 0-RC4
+PRODUCT_VERSION_MAINTENANCE = 0
 
 # Set CM_BUILDTYPE
 ifdef CM_NIGHTLY
