@@ -174,7 +174,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
-TONYP_VERSION = 05
+#TheROM
+TONYP_VERSION = 01
 
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/pa_hdpi.conf:system/etc/beerbong/properties.conf
@@ -182,7 +183,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tonyp.version=$(TONYP_VERSION) \
   ro.goo.developerid=tonyp \
-  ro.goo.board=$(BOARD) \
   ro.goo.version=$(shell date +%s)
 
 # Extra tools in CM
