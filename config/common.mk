@@ -178,6 +178,7 @@ PRODUCT_COPY_FILES +=  \
 TONYP_VERSION = 01
 
 PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/55-tonyp.sh:system/addon.d/55-tonyp.sh \
     vendor/cm/prebuilt/pa_hdpi.conf:system/etc/beerbong/properties.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
