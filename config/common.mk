@@ -142,8 +142,6 @@ include vendor/cm/config/themes_common.mk
 
 # Required CM packages
 PRODUCT_PACKAGES += \
-    Focal \
-    Development \
     LatinIME \
     Superuser \
     su
@@ -161,7 +159,6 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock
