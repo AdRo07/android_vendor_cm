@@ -156,9 +156,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Trebuchet \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
     Apollo \
     CMFileManager \
     LockClock
@@ -168,6 +165,9 @@ PRODUCT_PACKAGES += \
 
 # tonyp additions
 PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/common/apk/ViPER4Android_FX.apk:system/app/ViPER4Android_FX.apk \
+    vendor/cm/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
     vendor/cm/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
     vendor/cm/prebuilt/common/etc/init.d/95kowalski:system/etc/init.d/95kowalski \
