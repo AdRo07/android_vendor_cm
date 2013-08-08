@@ -176,6 +176,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
+# Enable mini gapps
+MINI_GAPPS := true
+$(call inherit-product, vendor/google/tiny_gapps_nonneon_tonyp.mk)
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
