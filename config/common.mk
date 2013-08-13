@@ -155,7 +155,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
+    Launcher2 \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
@@ -172,6 +172,13 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
 # tonyp additions
+
+TONYP_VERSION = 01
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.tonyp.version=$(TONYP_VERSION)
+
+# prebuilts
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
     vendor/cm/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
@@ -180,6 +187,11 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
     vendor/cm/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/cm/prebuilt/common/xbin/iwlist:system/xbin/iwlist
+
+# hybrid engine
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/55-tonyp.sh:system/addon.d/55-tonyp.sh \
+    vendor/cm/prebuilt/pa_hdpi.conf:system/etc/beerbong/properties.conf
 
 # Enable mini gapps
 MINI_GAPPS := true
