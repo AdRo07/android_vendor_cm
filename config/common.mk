@@ -143,6 +143,7 @@ include vendor/cm/config/themes_common.mk
 
 # Required CM packages
 PRODUCT_PACKAGES += \
+    Focal \
     LatinIME \
     Superuser \
     su
