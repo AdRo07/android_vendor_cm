@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
 
+# enable pipe
+TARGET_USE_PIPE := true
+
 # Enable mini gapps
 MINI_GAPPS := true
 $(call inherit-product, vendor/google/tiny_gapps_nonneon_tonyp.mk)
