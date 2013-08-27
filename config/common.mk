@@ -143,7 +143,6 @@ include vendor/cm/config/themes_common.mk
 
 # Required CM packages
 PRODUCT_PACKAGES += \
-    Focal \
     LatinIME \
     Superuser \
     su
@@ -175,11 +174,23 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
 # tonyp additions
+
+TONYP_VERSION = 03
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.tonyp.version=$(TONYP_VERSION)
+
+# prebuilts
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
 
 # enable pipe
 TARGET_USE_PIPE := true
+
+# hybrid engine
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/55-tonyp.sh:system/addon.d/55-tonyp.sh \
+    vendor/cm/prebuilt/pa_hdpi.conf:system/etc/beerbong/properties.conf
 
 # Enable mini gapps
 MINI_GAPPS := true
