@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
 
 # tonyp additions
 
-TONYP_VERSION = 03
+TONYP_VERSION = 05
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tonyp.version=$(TONYP_VERSION)
