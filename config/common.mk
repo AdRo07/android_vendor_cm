@@ -256,3 +256,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cm/sepolicy/sepolicy.mk
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
+
+# vendor/tonyp
+$(call inherit-product, vendor/tonyp/tonyp.mk)
+
