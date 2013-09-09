@@ -172,29 +172,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
-# tonyp additions
-
-TONYP_VERSION = 06
-
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.tonyp.version=$(TONYP_VERSION)
-
-# prebuilts
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
-
-# enable pipe
-TARGET_USE_PIPE := true
-
-# hybrid engine
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/55-tonyp.sh:system/addon.d/55-tonyp.sh \
-    vendor/cm/prebuilt/pa_hdpi.conf:system/etc/beerbong/properties.conf
-
-# Enable mini gapps
-MINI_GAPPS := true
-$(call inherit-product, vendor/google/tiny_gapps_nonneon_tonyp.mk)
-
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
