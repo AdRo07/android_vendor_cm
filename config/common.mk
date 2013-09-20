@@ -144,6 +144,7 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     LatinIME \
     Superuser \
+    BluetoothExt \
     su
 
 # Optional CM packages
