@@ -160,8 +160,7 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     Apollo \
     CMFileManager \
-    LockClock \
-    CMAccount
+    LockClock
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
