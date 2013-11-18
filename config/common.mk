@@ -202,7 +202,6 @@ PRODUCT_PACKAGES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
-    CMUpdater \
     Superuser \
     su
 
