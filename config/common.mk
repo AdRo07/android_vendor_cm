@@ -159,10 +159,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Apollo \
     CMFileManager \
-    LockClock \
-    CMUpdater \
-    CMFota \
-    CMAccount
+    LockClock
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -251,7 +248,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 2
-PRODUCT_VERSION_MAINTENANCE = 0-RC1
+PRODUCT_VERSION_MAINTENANCE = 0
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
