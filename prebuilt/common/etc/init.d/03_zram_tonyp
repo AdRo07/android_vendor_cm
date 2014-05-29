@@ -6,18 +6,22 @@ local val=62914560;
 local v=$(( val/cpus ));
 local ncpus=$(( cpus - 1 ));
 
-if busybox [ -f /system/lib/modules/zram.ko ]; then
-    if busybox [ -z "`busybox lsmod | busybox grep zram`" ]; then
-        busybox insmod /system/lib/modules/zram.ko;
+# Only check for zram module if there is no zram built into kernel
+if busybox [ ! -e /dev/block/zram0 ]; then
+    if busybox [ -f /system/lib/modules/zram.ko ]; then
+        if busybox [ -z "`busybox lsmod | busybox grep zram`" ]; then
+            busybox insmod /system/lib/modules/zram.ko;
+        fi;
+        busybox modprobe zram zram_num_devices=$cpus;
     fi;
-    busybox modprobe zram zram_num_devices=$cpus;
-fi;
 
-for i in `busybox seq 0 $ncpus`; do
-    busybox echo $v > /sys/block/zram$i/disksize;
-done;
-for i in `busybox seq 0 $ncpus`; do
-    busybox mkswap /dev/block/zram$i;
-    busybox swapon /dev/block/zram$i;
-done;
+    for i in `busybox seq 0 $ncpus`; do
+        busybox echo $v > /sys/block/zram$i/disksize;
+    done;
+    for i in `busybox seq 0 $ncpus`; do
+        busybox mkswap /dev/block/zram$i;
+        busybox swapon /dev/block/zram$i;
+    done;
+
+fi
 return;
