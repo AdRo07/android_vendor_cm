@@ -5,6 +5,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/feavCamera.apk:system/app/feavCamera.apk \
+    vendor/cm/prebuilt/common/apk/PerformanceControl.apk:system/app/PerformanceControl.apk \
     vendor/cm/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk
 
 # Enable mini gapps
