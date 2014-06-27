@@ -14,14 +14,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable \
-    SoundRecorder
-
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
-    libnamparser
+    SoundRecorder \
+    PhotoPhase
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
