@@ -2,7 +2,7 @@
 # Activate zram regardless of kernel support
 
 local cpus=1;
-local val=62914560;
+local val=115343360;
 local v=$(( val/cpus ));
 local ncpus=$(( cpus - 1 ));
 
