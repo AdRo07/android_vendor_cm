@@ -1,7 +1,7 @@
 #tonyp CM11 customizations
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.tonyp.version=2015-final
+    ro.tonyp.version=2015-beta
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/feavCamera.apk:system/app/feavCamera.apk \
