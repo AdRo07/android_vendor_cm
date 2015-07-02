@@ -7,6 +7,10 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 
 CHANGELOG (notable new features)
 ---------
+### 11.0.0 final (tonyp)
+* Sources updated to the latest CM11 snapshot (XNG3C)
+* Thanks for all the support over the years, it's been a lot of fun! /tonyp
+
 ### 11.0.0 M12
 * Common: Android 4.4.4 (Google)
 * Fix the POODLE vulnerability in SSLv3
