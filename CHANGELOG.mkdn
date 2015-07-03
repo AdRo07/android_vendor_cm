@@ -8,7 +8,11 @@ Visit http://review.cyanogenmod.org for our Gerrit instance.
 CHANGELOG (notable new features)
 ---------
 ### 11.0.0 final (tonyp)
+* P990: Fully fixed automatic time for the new P990 and SU660 Basebands
+* P990: Various tweaks to address our low memory device
+* P990: GPS updates by echo_21
 * Sources updated to the latest CM11 snapshot (XNG3C)
+* Fixed Google Play Services wakelock issues
 * Thanks for all the support over the years, it's been a lot of fun! /tonyp
 
 ### 11.0.0 M12
