@@ -1,7 +1,7 @@
 #tonyp CM11 customizations
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.tonyp.version=final
+    ro.tonyp.version=final-bcmdhd
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apk/PerformanceControl.apk:system/app/PerformanceControl.apk \
